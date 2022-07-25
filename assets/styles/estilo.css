@@ -1,29 +1,19 @@
-p{
-    font-size: 20px;
+/*Estilos da página index.html */
+
+.center{
+    text-align: center;
 }
 
+.justify{
+    text-align: justify;
 
-.p-color{
-color: red;
-}
-
-#p-first{
-    font-size: 24px;
-    font-weight: bold;
-}   
-
-img{
-    width: 500px;
 }
 
 .container{
     display: flex;
-    justify-content: right;
+    flex-flow: row;
+    justify-content: center;
     align-items: center;
-
-    border: 5px solid red;
-    padding: 20px;
-    margin: 20px;
 }
 
 #menu li{
@@ -43,4 +33,26 @@ img{
 
 .p-30{
     padding: 30px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh-300{
+    width: 500px;
+    height: 500px;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.ml-50{
+    margin-left: 50px;
 }
