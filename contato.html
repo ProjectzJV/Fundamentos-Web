@@ -8,10 +8,6 @@
 </head>
 <body>
 
-    <div>
-        <button onclick="hello()">Clica em Mim</button>
-    </div>
-    
     <ul id="menu">
         
         <li>                               <!--target= "_blank"  para abrir em uma nova guia-->
@@ -30,16 +26,20 @@
         <div>
             <form>
                 <label for ="nome">Nome</label><br>
-                <input name ="nome" type="text" id="nome">
-                <br><br>
-        
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+
+                <br>
                 <label for ="email">E-mail</label><br>
-                <input name ="email" type="email" id="email">
-                <br><br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
         
                 <label for ="assunto">Assunto</label><br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-                <br><br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
         
                 <button onclick="enviar()">Enviar</button>
             </form>
@@ -54,9 +54,10 @@
         656393061964256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53bf3785bf01%3A0xe92243a85f3ef7da!2sBar%
         20Sede%20Vila%20Fund%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1658418819173!5m2!1spt-BR!2sbr"
         width="450"
-        height="250"
+        height="350"
         style="border:0;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" 
+        onmouseout="mapaNormal()" id="mapa"></iframe>
 
         </div>
     </div>
